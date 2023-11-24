@@ -8,6 +8,7 @@ import { Injectable } from '@angular/core';
 })
 export class PhotoService {
   public photos: UserPhoto[] = [];
+  
   constructor() {}
   public async addNewToGallery() {
     const capturedPhoto = await Camera.getPhoto({
